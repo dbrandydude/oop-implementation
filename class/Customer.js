@@ -2,6 +2,7 @@
 const Bank = require('./Bank');
 
 const _id = new WeakMap();
+const _email = new WeakMap();
 
 /**
  * A customer of Bank with a checking account
@@ -10,9 +11,10 @@ const _id = new WeakMap();
  * @param balance [int|default=0] A float tracking the customer's account balance.
  */
 class Customer extends Bank {
-    constructor(name, balance=0.0) {
+    constructor(name, email, balance=0.0) {
         super();
         _id.set(this, Customer.counter++); // encapsulate customer id
+        _email.set(this, email); // encapsulate customer email
         this.name = name;
         this._balance = balance; // encapsulate customer balance
     }
