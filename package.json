@@ -4,7 +4,7 @@
   "description": "An OOP implementation by modelling a real-world scenario/problem, while taking advantage of inheritance, encapsulation, polymorphism and the other OOP concepts.",
   "main": "index.js",
   "directories": {
-    "test": "test"
+    "test": "mocha"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
