@@ -2,10 +2,10 @@
 
 module.exports = class Bank {
     constructor() {
-        this.name = 'GTBank';
+        this.nameOfBank = 'GTBank';
     }
 
     get bankName() {
-        return `Bank Name: ${this.name}`;
+        return `Bank Name: ${this.nameOfBank}`;
     }
 };
