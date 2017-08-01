@@ -24,6 +24,11 @@ class Customer extends Bank {
         return _id.get(this);
     }
 
+    // Get encapsulated customer email
+    getEmail() {
+        return _email.get(this);
+    }
+
     getBalance() {
         return this._balance;
     }
@@ -34,13 +39,13 @@ class Customer extends Bank {
             return 'Amount greater than available balance';
         }
         this._balance -= amount;
-        return this.printBalance();
+        return this._balance;
     }
 
     // Return account balcnce after deposit of <amount>
     deposit(amount) {
         this._balance += amount;
-        return this.printBalance();
+        return this._balance;
     }
 
     // print friendly account balance
