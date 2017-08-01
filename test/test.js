@@ -8,7 +8,7 @@ const client2 = new Customer('Jane Doe', 'jenna@email.com');
 
 describe('Inheritance', () => {
     it('should return `true` if Customer extends Bank', () => {
-        assert.equal(true, Customer.prototype instanceof(Bank));
+        assert.isTrue(Customer.prototype instanceof(Bank));
     });
 
     it('should return `true` if client inherits Bank', () => {
