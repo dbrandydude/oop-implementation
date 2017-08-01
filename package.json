@@ -1,0 +1,23 @@
+{
+  "name": "oop-implementation",
+  "version": "1.0.0",
+  "description": "An OOP implementation by modelling a real-world scenario/problem, while taking advantage of inheritance, encapsulation, polymorphism and the other OOP concepts.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbrandydude/oop-implementation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dbrandydude/oop-implementation/issues"
+  },
+  "homepage": "https://github.com/dbrandydude/oop-implementation#readme"
+}
