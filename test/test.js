@@ -30,14 +30,6 @@ describe('Encapsulation', () => {
     });
 });
 
-describe('Polymorphism', () => {
-    it('clients share the same bank name', () => {
-        let client1BankName = client1.bankName;
-        let client2BankName = client2.bankName;
-        assert.isTrue(client1BankName === client2BankName);
-    });
-});
-
 describe('Operation', () => {
     let amount = 1500;
     let withdraw = 600;
