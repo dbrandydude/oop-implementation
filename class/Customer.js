@@ -53,7 +53,7 @@ class Customer extends Bank {
         return `Account Balance: N${this._balance}`;
     }
 
-    // property to overridden by customer ( Polymorphism )
+    // superclass property to be overridden by customer ( Polymorphism )
     getInfo() {
         return `${super.getInfo()} \nCustomer Id: ${this.getId()} \nCustomer Name: ${this.name}\nEmail: ${this.getEmail()}`;
     }
