@@ -5,7 +5,7 @@ module.exports = class Bank {
         this.nameOfBank = 'GTBank';
     }
 
-    get bankName() {
+    getInfo() {
         return `Bank Name: ${this.nameOfBank}`;
     }
 };
