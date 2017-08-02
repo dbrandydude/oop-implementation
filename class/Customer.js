@@ -13,10 +13,10 @@ const _email = new WeakMap();
 class Customer extends Bank {
     constructor(name, email, balance=0.0) {
         super();
-        _id.set(this, Customer.counter++); // encapsulate customer id
-        _email.set(this, email); // encapsulate customer email
+        _id.set(this, Customer.counter++);
+        _email.set(this, email);
         this.name = name;
-        this._balance = balance; // encapsulate customer balance
+        this._balance = balance;
     }
 
     // Get encapsulated customer id
@@ -51,6 +51,11 @@ class Customer extends Bank {
     // print friendly account balance
     printBalance() {
         return `Account Balance: N${this._balance}`;
+    }
+
+    // property to overridden by customer ( Polymorphism )
+    getInfo() {
+        return `${super.getInfo()} \nCustomer Id: ${this.getId()} \nCustomer Name: ${this.name}\nEmail: ${this.getEmail()}`;
     }
 }
 Customer.counter = 1;
